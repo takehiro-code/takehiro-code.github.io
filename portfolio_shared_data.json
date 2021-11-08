@@ -1,23 +1,43 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Takehiro Tanaka",
+      "titles": [ "Recent Engineering Graduate", "Data Science", "Software Development", "Machine Learning"],
       "social": [
         {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/takehiro-code",
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/takehiro-tanaka/",
+          "class": "fab fa-linkedin"
         }
       ],
-      "image": "myProfile.jpg"
+      "image": "photo.jpg"
     },
     "skills": {
       "icons": [
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "95"
+        },
+        {
+          "name": "C++",
+          "class": "devicon-cplusplus-plain",
+          "level": "95"
+        },
+        {
+          "name": "Matlab",
+          "class": "devicon-matlab-plain",
+          "level": "95"
+        },
+        {
+          "name": "Bash",
+          "class": "devicon-bash-plain",
+          "level": "95"
+        },
         {
           "name": "HTML 5",
           "class": "devicon-html5-plain",
@@ -29,37 +49,27 @@
           "level": "95"
         },
         {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
           "name": "JavaScript",
           "class": "devicon-javascript-plain",
           "level": "70"
         },
         {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
+          "name": "NumPy",
+          "class": "devicon-numpy-original",
+          "level": "95"
         },
         {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
+          "name": "Pandas",
+          "class": "devicon-pandas-original",
+          "level": "95"
         },
         {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
+          "name": "Jupyter",
+          "class": "devicon-jupyter-plain",
+          "level": "95"
         },
         {
-          "name": "MySql",
+          "name": "MySQL",
           "class": "devicon-mysql-plain",
           "level": "60"
         }
