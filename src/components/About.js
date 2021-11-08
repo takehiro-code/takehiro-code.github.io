@@ -1,13 +1,29 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import angularIcon from "@iconify/icons-logos/github";
+import reactIcon from "@iconify/icons-logos/linkedin";
+import vueIcon from "@iconify/icons-logos/gridsome-icon";
+// import ReactHintFactory from 'react-hint'
+// const ReactHint = ReactHintFactory(React)
+
+// Referenced: https://react-bootstrap.github.io/components/overlays/#overlay-trigger
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = "images/" + this.props.sharedBasicInfo.image;
+      // the following networks is currently not utilized
+      var networks = this.props.sharedBasicInfo.social.map(function (network) {
+        return (
+          <span key={network.name} className="m-4">
+            <a href={network.url} target="_blank" rel="noopener noreferrer">
+              <i className={network.class}></i>
+            </a>
+          </span>
+        );
+      });
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
@@ -25,24 +41,58 @@ class About extends Component {
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
-                  <img
-                    height="250px"
+                  
+                    <img
+                    height="210px"
                     src={profilepic}
                     alt="Avatar placeholder"
-                  />
-                  <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                </span>
+                    />
+
+                    <br/>
+
+                    <div className="row md-4 fa-3x">
+                      <div class="col">
+                        <OverlayTrigger
+                          placement="bottom"
+                          delay={{ show: 150, hide: 400 }}
+                          overlay={<Tooltip className="fa-3x"><h3>GitHub</h3></Tooltip>}
+                        > 
+                        <a href="https://github.com/takehiro-code" target="_blank" class="linkedin"><i class="fab fa-github"></i></a>
+                        </OverlayTrigger>
+                      </div>
+
+                      <div class="col">
+                        <OverlayTrigger
+                          placement="bottom"
+                          delay={{ show: 150, hide: 400 }}
+                          overlay={<Tooltip className="fa-3x"><h3>LinkedIn</h3></Tooltip>}
+                          > 
+                        <a href="https://www.linkedin.com/in/takehiro-tanaka/" target="_blank" class="github"><i class="fab fa-linkedin"></i></a>
+                        </OverlayTrigger>
+                      </div>
+                    </div>
+
+                    <div class="row md-4  fa-3x">
+                      <div class="col">
+                        <OverlayTrigger
+                          placement="bottom"
+                          delay={{ show: 150, hide: 400 }}
+                          overlay={<Tooltip className="fa-3x"><h3>Email</h3></Tooltip>}
+                          > 
+                        <a href="mailto:takehirot47@gmail.com" target="_blank" class="google"><i class="fas fa-envelope-square"></i></a>
+                        </OverlayTrigger>
+                      </div>
+                      <div class="col">
+                        <OverlayTrigger
+                            placement="bottom"
+                            delay={{ show: 150, hide: 400 }}
+                            overlay={<Tooltip className="fa-3x"><h3>Resume</h3></Tooltip>}
+                            >
+                        <a href="./folder/Resume.pdf" target="_blank" class="google"><i class="fal fa-file-alt"></i></a>
+                        </OverlayTrigger>
+                      </div>
+                    </div>
+                  </span>
               </div>
             </div>
 

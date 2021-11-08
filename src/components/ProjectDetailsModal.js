@@ -4,6 +4,8 @@ import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
+import Badge from "react-bootstrap/Badge";
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -15,17 +17,9 @@ class ProjectDetailsModal extends Component {
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
-            <li className="list-inline-item mx-3" key={i}>
-              <span>
-                <div className="text-center">
-                  <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
-                      {icons.name}
-                    </p>
-                  </i>
-                </div>
-              </span>
-            </li>
+            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+            {icons.name}
+          </Badge>
           );
         });
         if (this.props.data.images) {

@@ -1,115 +1,188 @@
 {
     "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
+      "description_header": "Hello World!",
+      "description": "昨近、サイモンフレーザー大学を卒業しました。専攻は応用理学部・工学科学、工学物理専攻（BASc, Engineering Science, Engineering Physics Concentration）でした。大学では１６か月間の必須のCo-opといわれる長期インターンとともに、基礎から応用物理、電気電子工学、そしてソフトウェア開発やプログラミングなど様々な分野を学びました。近年の焦点としている分野はソフトウェア開発、データサイエンス、機械学習、深層学習、統計学を中心に学んでおります。最終学年での論文のプロジェクトでは、コンピュータビジョンと統計解析に関連する研究をしていました。",
       "section_name": {
-        "about": "O mnie",
-        "projects": "Projekty",
-        "skills": "Umiejętności",
-        "experience": "Doświadczenie"
+        "about": "プロフィール",
+        "projects": "プロジェクト",
+        "skills": "スキル",
+        "experience": "職歴・経験"
       }
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "title": "Impact of Video Compression on Object Tracking Performance (thesis)",
+        "startDate": "2021",
+        "description": "A supervised thesis project completed in 2021 August in SFU Multimedia Lab. The goal was to research and quantify the video compression effect on object tracking accuracy. There has not been a detailed study of video compression effect on tracking accuracy due to the lack of uncompressed videos with tracking annotations (ground truth), and thus the goal in my project was to analyze such effect statistically in detail. I utilized a detection-based tracker that consists of convolutional neural network (CNN)-based detector YOLOv3 and tracking algorithm - Simple Online Realtime Tracking (SORT). High Efficiency Video Compression (HEVC) was utilized to compress the videos. Data was collected through the experiment pipeline from both uncompressed videos and compressed videos. I analyzed the data statiscally using multiple linear regresison (weighted least square) and t-test with the aid of visualization, and proposed the quantitative relationship of compression effect on tracking accuracy, given the available data. Through this thesis project, I learned the concept of machine learning, computer vision, video compression, and statistical methodolgies while getting used to the technical writing with LaTex.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/thesis2021/tracking_video.gif",
+          "images/portfolio/thesis2021/experiment_pipeline.png",
+          "images/portfolio/thesis2021/visualization.png",
+          "images/portfolio/thesis2021/model.png"
+        ],
+        "url": "https://github.com/takehiro-code/Undergraduate-Honours-Thesis-Paper/blob/main/Takehiro%20Tanaka%20ENSC%20499%201207%20Thesis.pdf",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          },
+          {
+            "class": "devicon-bash-plain",
+            "name": "NumPy"
+          },
+          {
+            "name": "Pandas"
+          },
+          {
+            "name": "SciPy"
+          },
+          {
+            "name": "Matplotlib"
+          },
+          {
+            "name": "Statsmodels"
+          },
+          {
+            "name": "Plotly"
+          }
+        ]
+      },
+      {
+        "title": "CANnect - Automotive Diagnostics Application",
+        "startDate": "2020",
+        "description": "CANnect, the automotive diagnostics application was built as a part of engineering capstone group project. Our application reads vehicle performance data from OBDII port in a vehicle, processes them through the hardware module, and displays them in the mobile app. We worked on the project in a 6-people group, and my role was to develop the android application using Android Studio with Java and XML. The data is Parameter IDs (PIDs) such as engine coolant temperature, vehicle speed, fuel pressure, etc. The data is visualized in a mobile app in a table, line chart, and meter visualization in real-time through Bluetooth. Through this project, I learned how to build an android application using Android Studio and got used to programming with Java and XML.",
+        "images": [
+          "images/portfolio/capstone2020/system_overview_cropped.png",
+          "images/portfolio/capstone2020/app.png"
+        ],
+        "url": "https://github.com/takehiro-code/CANnect",
+        "technologies": [
+          {
+            "name": "Android Studio"
+          },
+          {
+            "name": "Java"
+          },
+          {
+            "name": "XML"
+          }
+        ]
+      },
+      {
+        "title": "Computational Physics",
+        "startDate": "2019",
+        "description": "Some of the work, as a part of Computational Physics course in 2019, are shown here. The first video represents the solution to the double pendulum problem, solving a system of ordinary differential equations (ODEs) using 10th order Gauss-Legendre integrator. The second image shows the solutions to the time independent Schrödinger's equation at a specific potential V(x) using again 10th order Gauss-Legendre method. The solutions, corresponding to the first 8 lowest eigenvalues (E0 to E7), psi(x) wave functions (or called eigenfucntions) and psi(x)^2 the probability distributions are shown. In this course, I learned how to solve problems including root-finding, optimization, ODE, PDE numerically while getting used to the programming languages Fortran and Bash. I used Gnuplot script to plot the results.",
+        "images": [
+          "images/portfolio/comp_phys/double_pendulum.gif",
+          "images/portfolio/comp_phys/schrodinger_equation.png"
         ],
         "url": "",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "Fortran"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "name": "Bash"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
+            "name": "Gnuplot"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "name": "LAPACK"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
+        "company": "SFU Multimedia Lab",
+        "title": "Thesis Research Project",
+        "years": "9.2020 - 8.2021",
+        "icon": "fab fa-python experience-icon",
         "mainTech": [
-          "Angular 8/9/10"
+          "Python"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
+          "Python",
+          "Bash",
+          "NumPy",
+          "Pandas",
+          "SciPy",
+          "Matplotlib",
+          "Statsmodels",
+          "Plotly"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
+        "company": "Ford Motor Company of Canada Ltd.",
+        "title": "System Software Performance and Stability (Co-op)",
+        "years": "9.2019 - 12.2019",
+        "icon": "fab fa-js experience-icon",
         "mainTech": [
-          "Angular 7/8"
+          "JavaScript"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
+          "HTML",
+          "CSS",
           "JavaScript",
-          "DHTMLX Gantt"
+          "jQuery",
+          "Materialize",
+          "Google Charts",
+          "Python",
+          "MySQL"
+        ]
+      },
+      {
+        "company": "SFU’s Big Data Hub",
+        "title": "Research Assistant",
+        "years": "01.2019 - 08.2019",
+        "icon": "fab fa-python experience-icon",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "Python",
+          "Bash",
+          "Pandas",
+          "Spark",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "company": "SFU’s Big Data Hub",
+        "title": "BIG DATA / Data Analyst (Co-op)",
+        "years": "05.2018 - 12.2018",
+        "icon": "fab fa-python experience-icon",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "Python",
+          "Pandas",
+          "Spark",
+          "PostgreSQL",
+          "Matplotlib",
+          "Tableau",
+          "Web Scarping",
+          "NLP"
+        ]
+      },
+      {
+        "company": "Nanodevice Fabrication Group",
+        "title": "Nanomaterial and Nanodevice Fabrication Research (Co-op)",
+        "years": "05.2017 - 8.2017",
+        "icon": "fas fa-microscope experience-icon",
+        "mainTech": [
+          "Fabrication"
+        ],
+        "technologies": [
+          "Micro/Nanofabrication",
+          "2D Materials",
+          "Matlab"
         ]
       }
     ]

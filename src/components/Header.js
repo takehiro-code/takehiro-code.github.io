@@ -88,6 +88,8 @@ class Header extends Component {
                 id="icon-switch"
               />
             </div>
+            <div>
+            </div>
           </div>
         </div>
       </header>
