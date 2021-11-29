@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "name": "Takehiro Tanaka",
-      "titles": [ "Recent Engineering Graduate", "Data Science", "Software Development", "Machine Learning"],
+      "titles": [ "Recent Engineering Graduate", "Data Analytics", "Software Engineering", "Physics Engineering"],
       "social": [
         {
           "name": "github",
@@ -29,7 +29,7 @@
           "level": "95"
         },
         {
-          "name": "Matlab",
+          "name": "MATLAB",
           "class": "devicon-matlab-plain",
           "level": "95"
         },

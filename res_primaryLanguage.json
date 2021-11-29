@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hello World!",
-      "description": "I am a recent engineering graduate, who concentrated in engineering physics at Simon Fraser University. During the studies as well as 16 months of co-op work experiences, I learned a wide range of fields from mathematics, foundational/applied physics, electronics, to software development and programming. My recent years of interest and focus have been data analytics, data science, software development, and machine learning, though I am open to opportunities in different fields. During my final year of studies, I worked on a thesis project that involves computer vision and statistical analysis.",
+      "description": "I am a recent engineering graduate, who concentrated in engineering physics at Simon Fraser University. During the studies as well as 16 months of co-op work experiences, I learned a wide range of fields from mathematics, foundational/applied physics, electronics, to software development and programming. My recent years of interest and focus have been data analytics and software engineering, though I am open to and interested in opportunities in different fields such as hardware, electronics, semiconductor, or systems engineering that involves physics. During my final year of studies, I worked on a thesis project that involves computer vision and statistical analysis.",
       "section_name": {
         "about": "About me",
         "projects": "Projects & Coursework",
@@ -100,7 +100,7 @@
     "experience": [
       {
         "company": "SFU Multimedia Lab",
-        "title": "Thesis Research Project",
+        "title": "Undergraduate Thesis Student",
         "years": "9.2020 - 8.2021",
         "icon": "fab fa-python experience-icon",
         "mainTech": [
@@ -182,7 +182,7 @@
         "technologies": [
           "Micro/Nanofabrication",
           "2D Materials",
-          "Matlab"
+          "MATLAB"
         ]
       }
     ]
