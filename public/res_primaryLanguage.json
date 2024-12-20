@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hello World!",
-      "description": "I am a recent engineering graduate, who concentrated in engineering physics at Simon Fraser University. During the studies as well as 16 months of co-op work experiences, I learned a wide range of fields from mathematics, foundational/applied physics, electronics, to software development and programming. My recent years of interest and focus have been data analytics, data science, software development, and machine learning, though I am open to opportunities in different fields. During my final year of studies, I worked on a thesis project that involves computer vision and statistical analysis.",
+      "description": "Graduarted from Simon Fraser University in Canada. Majored in Engineering Science, Engineering Physics Concentration with 1+ year internship (co-op). Learned various fields from software development, theoretical to applied physics, mathematics, up to hardware engineering and microelectronics. Currently, working as a software developer in the cybersecurity industry.",
       "section_name": {
         "about": "About me",
         "projects": "Projects & Coursework",
@@ -80,7 +80,7 @@
           "images/portfolio/comp_phys/double_pendulum.gif",
           "images/portfolio/comp_phys/schrodinger_equation.png"
         ],
-        "url": "",
+        "url": "https://github.com/takehiro-code/PHYS395-Computational-Physics-Course",
         "technologies": [
           {
             "name": "Fortran"
@@ -98,6 +98,26 @@
       }
     ],
     "experience": [
+      {
+        "company": "Fortinet Technologies (Canada) ULC",
+        "title": "Software Developer",
+        "years": "2.2022 - present",
+        "icon": "fab fa-golang experience-icon",
+        "mainTech": [
+          "Golang"
+        ],
+        "technologies": [
+          "Golang",
+          "C++",
+          "Python",
+          "JavaScript",
+          "TCP/IP",
+          "Microservices",
+          "SQL-Server",
+          "PostgreSQL",
+          "Docker"
+        ]
+      },
       {
         "company": "SFU Multimedia Lab",
         "title": "Thesis Research Project",
